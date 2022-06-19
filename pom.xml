@@ -6,9 +6,11 @@
 	<artifactId>algorithms</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
 	<name>Algorithms</name>
-	<description>This Project demonstrate sample implementation of differnt Algorithms</description>
+	<description>This Project demonstrate sample implementation of different Algorithms</description>
 	<properties>
 		<testng.version>6.11</testng.version>
+		<maven.compiler.source>11</maven.compiler.source>
+		<maven.compiler.target>11</maven.compiler.target>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -18,4 +20,16 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.8.0</version>
+				<configuration>
+					<release>11</release>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 </project>

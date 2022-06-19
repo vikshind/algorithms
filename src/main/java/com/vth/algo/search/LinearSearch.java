@@ -1,5 +1,7 @@
 package com.vth.algo.search;
 
+import java.util.Arrays;
+
 public class LinearSearch {
 	static int search(int arr[], int element) {
 		int index = -1;
@@ -14,7 +16,11 @@ public class LinearSearch {
 
 	public static void main(String[] args) {
 
-		int arr[] = { 2, 3, 4, 10, 40 };
+		int arr[] = { 50, 6, 2, 3, 4, 10, 40 };
+		System.out.println("Uns orted array is -> " + Arrays.toString(arr));
+		//Make sure that array is sorted.
+		Arrays.sort(arr);
+		System.out.println("Sorted array is -> " + Arrays.toString(arr));
 		int x = 10;
 
 		// Function call

@@ -1,5 +1,7 @@
 package com.vth.algo.search;
 
+import java.util.Arrays;
+
 /**
  * Java implementation of recursive Binary Search
  * 
@@ -44,9 +46,12 @@ class BinarySearch {
 	// Driver method to test above
 	public static void main(String args[]) {
 		BinarySearch binarySearch = new BinarySearch();
-		
-
 		int arr[] = {-1,0,3,5,9,12};
+		System.out.println("Uns orted array is -> " + Arrays.toString(arr));
+		//Make sure that array is sorted.
+		Arrays.sort(arr);
+		System.out.println("Sorted array is -> " + Arrays.toString(arr));
+		
 		int n = arr.length;
 		int x = 2;
 		int result = binarySearch.search(arr, 0, n - 1, x);

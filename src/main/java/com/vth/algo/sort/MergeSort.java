@@ -10,10 +10,10 @@ public class MergeSort {
 	// Merges two subarrays of arr[].
 	// First subarray is arr[l..m]
 	// Second subarray is arr[m+1..r]
-	void merge(int arr[], int l, int m, int r) {
+	void merge(int arr[], int left, int mid, int right) {
 		// Find sizes of two subarrays to be merged
-		int n1 = m - l + 1;
-		int n2 = r - m;
+		int n1 = mid - left + 1;
+		int n2 = right - mid;
 
 		/* Create temp arrays */
 		int leftArray[] = new int[n1];
@@ -21,9 +21,9 @@ public class MergeSort {
 
 		/* Copy data to temp arrays */
 		for (int i = 0; i < n1; ++i)
-			leftArray[i] = arr[l + i];
+			leftArray[i] = arr[left + i];
 		for (int j = 0; j < n2; ++j)
-			rightArray[j] = arr[m + 1 + j];
+			rightArray[j] = arr[mid + 1 + j];
 
 		/* Merge the temp arrays */
 
@@ -31,7 +31,7 @@ public class MergeSort {
 		int i = 0, j = 0;
 
 		// Initial index of merged subarray array
-		int k = l;
+		int k = left;
 		while (i < n1 && j < n2) {
 			if (leftArray[i] <= rightArray[j]) {
 				arr[k] = leftArray[i];
