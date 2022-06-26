@@ -29,7 +29,7 @@ public class ItoA {
             tmp /= 10;
         }
 
-        int digs[] = new int[digits];
+        int[] digs = new int[digits];
 
         for (tmp = digits-1; num > 0; tmp--)
         {

@@ -47,7 +47,7 @@ class BinarySearch {
 	public static void main(String args[]) {
 		BinarySearch binarySearch = new BinarySearch();
 		int arr[] = {-1,0,3,5,9,12};
-		System.out.println("Uns orted array is -> " + Arrays.toString(arr));
+		System.out.println("The sorted array is -> " + Arrays.toString(arr));
 		//Make sure that array is sorted.
 		Arrays.sort(arr);
 		System.out.println("Sorted array is -> " + Arrays.toString(arr));
